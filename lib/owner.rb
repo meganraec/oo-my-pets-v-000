@@ -33,32 +33,21 @@ class Owner
     new_fish = Fish.new(fish_name)
     self.pets[:fishes] << new_fish
   end
+
+  def buy_cat(cat_name)
+    new_cat = Cat.new(cat_name)
+    self.pets[:cats] << new_cat
+  end
+
+  def buy_dog(dog_name)
+    new_dog = Dog.new(dog_name)
+    self.pets[:dogs] << new_dog
+  end
+
+  
 end
-    # describe "#buy_fish" do
-    #   it 'can buy a fish that is an instance of the Fish class' do
-    #     expect(owner.pets[:fishes].count).to eq(0)
-    #     owner.buy_fish("Bubbles")
-    #     owner.pets[:fishes].each do |fish|
-    #       expect(fish).to be_a(Fish)
-    #     end
-    #     expect(owner.pets[:fishes].count).to eq(1)
-    #   end
-    #
-    #   it 'knows about its fishes' do
-    #     owner.buy_fish("Bubbles")
-    #     expect(owner.pets[:fishes][0].name).to eq("Bubbles")
-    #   end
-    # end
-    #
-    # describe "#buy_cat" do
-    #   it 'can buy a cat that is an instance of the Cat class' do
-    #     expect(owner.pets[:cats].count).to eq(0)
-    #     owner.buy_cat("Crookshanks")
-    #     owner.pets[:cats].each do |cat|
-    #       expect(cat).to be_a(Cat)
-    #     end
-    #     expect(owner.pets[:cats].count).to eq(1)
-    #   end
+
+
     #
     #   it 'knows about its cats' do
     #     owner.buy_cat("Crookshanks")
