@@ -48,12 +48,12 @@ class Owner
     self.pets[:dogs].each {|dog| dog.mood = "happy"}
   end
 
-  def plays_with_cats
+  def play_with_cats
     self.pets[:cats].each {|cat| cat.mood = "happy"}
   end
 
   def feed_fish
-    self.pets[:fish].each {|fish| fish.mood = "happy"}
+    self.pets[:fishes].each {|fish| fish.mood = "happy"}
   end
 
   def list_pets
