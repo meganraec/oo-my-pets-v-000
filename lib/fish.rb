@@ -2,11 +2,11 @@ class Fish
   attr_reader :name
   attr_accessor :mood
 
-  @@all = []
+  ALL = []
 
   def initialize(name)
     @name = name
     @mood = "nervous"
-    @@all << self
+    ALL << self
   end
 end
