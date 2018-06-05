@@ -45,15 +45,15 @@ class Owner
   end
 
   def walk_dogs
-    Dog::ALL.each {|dog| dog.mood = "happy"}
+    self.pets[:dogs].each {|dog| dog.mood = "happy"}
   end
 
   def plays_with_cats
-    Cat::ALL.each {|cat| cat.mood = "happy"}
+    self.pets[:cats].each {|cat| cat.mood = "happy"}
   end
 
   def feed_fish
-    Fish.ALL.each {|fish| fish.mood = "happy"}
+    self.pets[:fish].each {|fish| fish.mood = "happy"}
   end
 
   def list_pets
