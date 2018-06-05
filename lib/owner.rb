@@ -44,34 +44,12 @@ class Owner
     self.pets[:dogs] << new_dog
   end
 
-  
+  def walk_dogs
+    Dog::ALL.each {|dog| dog.mood = "happy"}
+  end
+
 end
 
-
-    #
-    #   it 'knows about its cats' do
-    #     owner.buy_cat("Crookshanks")
-    #     expect(owner.pets[:cats][0].name).to eq("Crookshanks")
-    #   end
-    #
-    # end
-    #
-    # describe "#buy_dog" do
-    #   it 'can buy a dog that is an instance of the Dog class' do
-    #     expect(owner.pets[:dogs].count).to eq(0)
-    #     owner.buy_dog("Snuffles")
-    #     owner.pets[:dogs].each do |dog|
-    #       expect(dog).to be_a(Dog)
-    #     end
-    #     expect(owner.pets[:dogs].count).to eq(1)
-    #   end
-    #
-    #
-    #   it 'knows about its dogs' do
-    #     owner.buy_dog("Snuffles")
-    #     expect(owner.pets[:dogs][0].name).to eq("Snuffles")
-    #   end
-    # end
     #
     # describe "#walk_dogs" do
     #   it "walks the dogs which makes the dogs' moods happy" do
